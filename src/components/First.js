@@ -3,7 +3,6 @@ import styled from 'styled-components'
 const Container = styled.div`
 width: 100%;
 
-
     .icon-scroll {
         position: absolute;
         bottom: 3%;
@@ -14,9 +13,10 @@ width: 100%;
 `;
 
 const Section = styled.div`
-positon: relative;
-height: 969px;
-background-color: #2ac1bc;
+max-width: 1024px;
+margin: 0 auto;
+
+
 `;
 
 // const Desert = styled.img`
@@ -37,14 +37,11 @@ max-width: 142px;
 
 
 const Content = styled.div`
-max-width: 1024px;
-margin: 0 auto;
-position: absolute;
-left: 0;
-top: 0;
-right: 0;
-bottom: 0;
-margin: auto;
+position: relative;
+height: 100vh;
+padding: 0 6%;
+color: #ffffff;
+box-sizing: border-box;
 
     .header-text{
         position: absolute;
@@ -73,31 +70,35 @@ margin: auto;
 
                 img {
                     max-width: 100%;
-           
-                
                 }
             }
+
+@media screen and (min-width: 768px) {
+    .header-text {
+        top: 20%;
+        left: 50px;
+    }
+}
 
 `;
     
 
-const Main = () => {
+const First = () => {
     return (
         <Container>
             <Section>
-                {/* <Desert src="/images/bg_food.jpg" alt="디저트" /> */}
-                    <Content>
-                        {/* <Logo src="/images/logo.png" alt="로고"/> */}
-                    
+                    <Content>         
                         <div className="header-text">
                             <h1 className="header-text1">
-                                <img src="/images/main_text.png" alt="든든한 집밥 한상이 간절할 때"/>
+                                <img src="/images/main_text_01.png" alt="든든한 집밥 한상이 간절할 때"/>
                             </h1>
                         </div>
                         
                         <div className="app-download">
                             <img src="/images/btn_down.png" alt="배민앱 다운로드"/>
                         </div>
+
+                   
                 
                     </Content>
                 </Section>
@@ -105,4 +106,4 @@ const Main = () => {
     )
 }
 
-export default Main;
+export default First;
