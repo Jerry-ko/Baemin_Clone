@@ -2,9 +2,16 @@ import styled from 'styled-components'
 import First from './components/First'
 import Second from './components/Second'
 import Third from './components/Third'
+import Fourth from './components/Fourth'
+import Fifth from './components/Fifth'
+import Sixth from './components/Sixth'
+import Seventh from './components/Seventh'
+import Footer from './components/Footer'
 
 const Container = styled.div`
 background: pink;
+overflow: hidden;
+width: 100%;
 `;
 
 
@@ -14,7 +21,7 @@ width: 100%;
 top: 0;
 z-index: 10;
 
-    .top-fixed {
+    .logo {
       display: block;
       margin: 40px 0 0 6%;
       width: 28%;
@@ -65,8 +72,12 @@ z-index: 10;
   }  
 
   @media screen and (min-width: 768px) {
+    width: 1024px;
+    min-width: 1024px !important;
+    left: 50%;
+    margin-left: -512px;
 
-    .top-fixed {
+    .logo {
       width: 100%;
     }
 
@@ -94,12 +105,12 @@ z-index: 10;
 
   
   @media screen and (min-width: 1024px) {
-  width: 1024px;
-  min-width: 1024px !important;
-  left: 50%;
-  margin-left: -512px;
+  // width: 1024px;
+  // min-width: 1024px !important;
+  // left: 50%;
+  // margin-left: -512px;
 
-      .top-fixed {
+      .logo {
         margin-top: 60px;
         margin-left: 50px;
       }
@@ -117,6 +128,15 @@ z-index: 10;
 `;
 
 
+const Wrapper = styled.div`
+    height: 100%;
+    position: relative;
+    touch-action: none;
+    transform: translate3d(0px, 0px, 0px);
+    transition: all 700ms ease 0s;
+  
+`;
+
 
   
 
@@ -124,7 +144,7 @@ function App() {
   return (
     <Container>
       <Fixed>
-        <div className="top-fixed">
+        <div className="logo">
           <img src="/images/logo.png" alt="로고"/>
         </div>
         <a className="app-download">
@@ -153,10 +173,16 @@ function App() {
           </li>
         </ul>
       </Fixed>
-
+      <Wrapper>
         <First></First>
         <Second></Second>
         <Third></Third>
+        <Fourth></Fourth>
+        <Fifth></Fifth>
+        <Sixth></Sixth>
+        <Seventh></Seventh>
+        <Footer></Footer>
+      </Wrapper>
 
     </Container>
   );

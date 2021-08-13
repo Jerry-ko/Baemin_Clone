@@ -2,15 +2,11 @@ import styled from 'styled-components'
 
 const Container = styled.div`
 width: 100%;
-
-
 `;
 
 const Section = styled.div`
 max-width: 1024px;
 margin: 0 auto;
-
-
 `;
 
 
@@ -19,7 +15,6 @@ position: relative;
 height: 100vh;
 padding: 0 6%;
 color: #ffffff;
-background-color: #2ac1bc;
 box-sizing: border-box;
 
         .header-text{
@@ -46,13 +41,10 @@ box-sizing: border-box;
             right: 0;
             width: 55%;
         
-
-            img {
-                width: 100%;                      
-            }
+                    img {
+                        width: 100%;                      
+                    }
         }
-
-
 
         .content-desc {
             position: absolute;
@@ -74,6 +66,7 @@ box-sizing: border-box;
             width: 85%;
 
             img {
+                vertical-align: top;
                 max-width: 100%;
                 height: auto;
             }
@@ -97,8 +90,8 @@ box-sizing: border-box;
     }
 
         .animation {
-
-        
+            width: 400px;
+            right: 40px;
         }
 
 }

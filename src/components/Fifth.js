@@ -1,12 +1,17 @@
 import styled from 'styled-components'
 
 const Container = styled.div`
-width: 100%; 
+width: 100%;
+
+
+
 `;
 
 const Section = styled.div`
 max-width: 1024px;
 margin: 0 auto;
+
+
 `;
 
 
@@ -60,29 +65,15 @@ box-sizing: border-box;
         }
 
         .animation {
-       
-            .road {
-                position: absolute;
-                bottom: 27%;
-                right: 31%;
-                width: 42%;
+            position: absolute;
+            bottom: 0;
+            right: 10%;
+            width: 55.2%;
 
-                        img {
-                            max-width: 100%;
-                            height: auto;
-                        }
-               
-            }
-            .bike {
-                position: absolute;
-                bottom: 8%;
-                right: 0%;
-                width: 42%;
-
-                img {
-                    max-width: 100%;
-                    height: auto;
-                }
+            img {
+                vertical-align: top;
+                max-width: 100%;
+                height: auto;
             }
         }
 
@@ -104,33 +95,8 @@ box-sizing: border-box;
     }
 
         .animation {
-
-            .road {
-                position: absolute;
-                bottom: 16%;
-                right: 19%;
-                width: 232px;
-            
-                img {
-                    position: absolute;
-                    bottom: 16%;
-                    right: 21%;
-                }
-               
-            }
-
-            .bike {
-                position: absolute;
-                bottom: -1%;
-                right: 11%;
-                width: 204px;
-                animation: bike 0.8s ease forwards;
-
-                img {
-                    max-width: 100%;
-                    height: auto;
-                }
-            }
+            width: 400px;
+            right: 40px;
         }
 
 }
@@ -148,27 +114,22 @@ box-sizing: border-box;
 `;
     
 
-const Second = () => {
+const Sixth = () => {
     return (
         <Container>
             <Section>
                     <Content>         
                         <div className="header-text">
                             <h1 className="header-text1">
-                                <img src="/images/main_text_02.png" alt="든든한 집밥 한상이 간절할 때"/>
+                                <img src="/images/main_text_05.png" alt="너에게 밥을 보낸다 배민선물하기"/>
                             </h1>
-                            <p className="content-desc">3천만 이상이 선택한 배달의 민족,<br />업계 최다 배달가능 업소 보유 중!
-                            <span className="sub-desc">(2017년 11월 기준)</span></p>
+                            <p className="content-desc">궁금한 맛은 직접 물어보고, 구경하는 재미<br />
+                            이제 배민에서 생생하게 경험하세요!</p>
                         </div>
   
                         
                         <div className="animation">
-                            <div className="road">
-                                <img src="/images/img-road.png" alt="배달이"/>
-                            </div>
-                            <div className="bike">
-                                <img src="/images/img-bike.png" alt="배달이"/>
-                            </div>                   
+                            <img src="/images/img_shoppinglive.png" alt="생방송"/>            
                         </div>     
                     </Content>
                 </Section>
@@ -176,4 +137,4 @@ const Second = () => {
     )
 }
 
-export default Second;
+export default Sixth;

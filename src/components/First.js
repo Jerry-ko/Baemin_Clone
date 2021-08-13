@@ -15,8 +15,7 @@ width: 100%;
 const Section = styled.div`
 max-width: 1024px;
 margin: 0 auto;
-
-
+overflow:hidden;
 `;
 
 // const Desert = styled.img`
